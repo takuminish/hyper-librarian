@@ -54,10 +54,10 @@
 ![Ph3](README_images/ph3.jpg)
 
 #### 技術調査
-- [ ]署名付きURL
-- [ ]Cloudflare Workersを使用した画像のキャッシュ
-- [ ]Cloudflare Workersを使用した画像のリサイズ
-- [ ]Cloudflare Workersを使用した画像の署名付きURLの作成
+- [ ] 署名付きURL
+- [ ] Cloudflare Workersを使用した画像のキャッシュ
+- [ ] Cloudflare Workersを使用した画像のリサイズ
+- [ ] Cloudflare Workersを使用した画像の署名付きURLの作成
 
 ### ⬜️フェーズ4
 #### 機能要件
