@@ -5,6 +5,26 @@
 ## Usage
 
 ## 技術スタック
+### 言語
+- TypeScript
+
+### ライブラリ・フレームワーク
+- React
+- Hono
+- Drizzle ORM
+- BullMQ
+
+### インフラ
+- Cloudflare Pages
+- Cloudflare Workers
+- Cloudflare D1
+- Cloudflare R2
+- Cloudflare KV
+- firebase authentication
+- upstash Resis
+
+### 外部サービス
+- OpenBD
 
 ## ディレクトリ構成
 
@@ -65,9 +85,6 @@
 - メッセージキューを導入する。データ登録処理はconsumerに移譲する。
 - キューへのqnqueue、データ登録までの一連の流れをjobと呼び、画面上から追えるようにする。
 
-### ⬜️フェーズ5
-- なんかいい感じに機能拡張(インフラ構成は多分変えない)
-
 #### 構成図
 ![Ph4](README_images/ph4.jpg)
 
@@ -76,3 +93,7 @@
 - [ ] upstash Redis
 - [ ] upstash RedisとCloudflare Workersの疎通
 - [ ] bullMQ
+
+### ⬜️フェーズ5
+- なんかいい感じに機能拡張(インフラ構成は多分変えない)
+
