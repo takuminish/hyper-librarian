@@ -10,10 +10,14 @@ const app = new Hono<{Bindings: Bindings}>()
 
 app.use(renderer)
 
-app.get('/', (c) => {
-  const client = hc<AppType>('/', { fetch: c.env.API.fetch.bind(c.env.API) })
-  const res = client.index.$get();
-  return c.render(<h1>{res}</h1>)
+app.get('/', async (c) => {
+  // https://github.com/honojs/hono/issues/2487
+  const url = new URL(c.req.url)
+  const baseUrl = `${url.protocol}//${url.hostname}`
+  const client = hc<AppType>(baseUrl, {fetch: c.env.API.fetch.bind(c.env.API)});
+  const res = await client.index.$get();
+  const data = await res.text();
+  return c.text(`${data}`);
 })
 
 export default app
