@@ -40,8 +40,8 @@
 ![Ph1](README_images/ph1.jpg)
 
 #### 技術調査
-- [ ] Cloudflare Pages
-- [ ] Cloudflare Workers
+- [x] Cloudflare Pages
+- [x] Cloudflare Workers
 - [x] Cloudflare PagesのFE + Cloudflare WorkersのBEの疎通
 - [ ] Cloudflare D1
 - [ ] Cloudflare WorkersとCloudflare D1の疎通
