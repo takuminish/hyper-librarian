@@ -10,5 +10,10 @@ export default defineConfig({
       adapter,
       entry: 'src/index.tsx'
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      "@api": "../api/src",
+    }
+  }
 })
