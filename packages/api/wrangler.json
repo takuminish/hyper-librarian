@@ -2,5 +2,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "hyper-librarian-api",
   "main": "src/index.ts",
-  "compatibility_date": "2025-02-05"
+  "compatibility_date": "2025-02-05",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "db",
+      "database_id": "0ed08056-82a3-40a2-b4f2-205906800f30"
+    }
+  ]
 }

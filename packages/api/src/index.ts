@@ -1,9 +1,18 @@
 import { Hono } from 'hono'
 
-const app = new Hono()
+type Bindings = {
+  DB: D1Database;
+};
 
-const routes = app.get('/', (c) => {
-  return c.text('Hello Hono!')
+const app = new Hono<{Bindings: Bindings}>();
+
+const routes = app.get('/', async (c) => {
+  const { results } = await c.env.DB.prepare(
+    "SELECT * FROM Customers WHERE CompanyName = ?",
+  )
+    .bind("Bs Beverages")
+    .all();
+  return Response.json(results);
 })
 
 export type AppType = typeof routes
