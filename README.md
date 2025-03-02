@@ -43,8 +43,8 @@
 - [x] Cloudflare Pages
 - [x] Cloudflare Workers
 - [x] Cloudflare PagesのFE + Cloudflare WorkersのBEの疎通
-- [ ] Cloudflare D1
-- [ ] Cloudflare WorkersとCloudflare D1の疎通
+- [x] Cloudflare D1
+- [x] Cloudflare WorkersとCloudflare D1の疎通
 - [ ] Firebase Authentication
 - [ ] Firebase Authenticationによる認証の流れの把握
 - [ ] OpenBDとの疎通
